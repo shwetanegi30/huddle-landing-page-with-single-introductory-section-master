@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.bg-pattern {
+  background-image: url("../images/bg-desktop.svg");
+  background-color: hsl(257, 40%, 49%);
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 81vw;
+}
+
+.logo {
+  width: 180px;
+}
+
+.img {
+  max-width: 620px;
+}
+
+.middle-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side {
+  padding-right: 75px;
+  padding-top: 93px;
+}
+
+.right-side {
+  padding: 0 120px 50px 0;
+}
+
+.heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 33px;
+  color: white;
+  line-height: 1.5;
+}
+
+.phrase {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.3;
+  color: white;
+  padding-top: 15px;
+}
+
+.btn {
+  font-size: 14px;
+  background-color: white;
+  border: 0;
+  color: hsl(257, 40%, 49%);
+  border-radius: 23px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 23px;
+}
+
+.btn:hover {
+  background-color: hsl(300, 69%, 71%);
+}
+
+.footer {
+  text-align: end;
+  padding-right: 115px;
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  font-size: 20px;
+  color: white;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.fa-twitter:hover {
+  color: hsl(300, 69%, 71%);
+  border: 2px solid hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width:500px) {
+  .bg-pattern {
+    background-image: url("../images/bg-mobile.svg") !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: var(--app-height);
+  }
+
+  .logo {
+    margin-top: 35px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 79vw;
+    margin-top: 30px;
+  }
+
+  .middle-body {
+    flex-direction: column;
+    margin-left: 80px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img {
+    max-width: 320px;
+  }
+
+  .left-side {
+    padding-right: 75px;
+
+    padding-top: 57px;
+  }
+
+  .right-side {
+    padding-top: 40px;
+    padding-bottom: 28px;
+  }
+
+  .footer {
+    padding-bottom: 25px;
+    text-align: center;
+    padding-right: 10px;
+  }
+
+  .btn {
+    padding: 10px 70px 10px 70px;
+  }
+}
